@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de Todos</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="edits.css">
+  <style>
+    body {
+         background-color: #e9ecec;
+        
+    }
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Lista de Tareas</h1>
+    <div class="input-group mb-3">
+      <input type="text" id="newTodo" class="form-control" placeholder="Nueva tarea">
+      <div class="input-group-append">
+        <button class="btn btn-primary" id="addTodoButton" type="button">Agregar</button>
+      </div>
+    </div>
+    <div id="alert" class="alert alert-success d-none" role="alert"></div>
+    <ul id="todoList" class="list-group"></ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
